@@ -15,4 +15,16 @@
         width: 207px;
         height: 52px;
     }
+
+    &__slider {
+        width: 187px;
+        height: 52px;
+        border: 2px solid var(--color-primary);
+        background-color: transparent;
+        padding: 12px 35px; 
+    }
+
+    &__slider-last {
+        margin: 60px -2px 60px 0;
+    }
 }

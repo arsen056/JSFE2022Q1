@@ -382,6 +382,7 @@ h1, h2, h3, h4 {
 :root {
   --bg-color-1: #FFFFFF;
   --bg-color-2: #F6F6F6;
+  --bg-color-card: #FAFAFA;
   --color-primary: #F1CDB3;
   --font-light: #FAFAFA;
   --font-dark-s: #CDCDCD;
@@ -526,6 +527,84 @@ h1, h2, h3, h4 {
   column-gap: 120px;
 }
 
+.pets {
+  background-color: var(--bg-color-2);
+}
+.pets__heading {
+  max-width: 400px;
+  text-align: center;
+  padding-top: 80px;
+}
+
+.pets__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.slider {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 58px;
+}
+.slider__wrapper {
+  display: flex;
+  column-gap: 90px;
+}
+.slider__item {
+  width: 270px;
+  height: 435px;
+  text-align: center;
+  background-color: var(--bg-color-card);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 30px;
+}
+.slider__name {
+  font-family: Georgia, sans-serif;
+  font-size: 2rem;
+  line-height: 1.1;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: var(--font-dark-l);
+}
+.slider__arrow__wrapper {
+  width: 52px;
+  height: 52px;
+  border: 2px solid var(--color-primary);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.slider__arrow {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 13px;
+  height: 10px;
+}
+.slider__arrow_left {
+  background-image: url("../assets/icons/arrow-left.svg");
+}
+.slider__arrow_right {
+  background-image: url("../assets/icons/arrow-right.svg");
+}
+.slider .arrow-left {
+  position: absolute;
+  left: -104px;
+  top: 37.6%;
+}
+.slider .arrow-right {
+  position: absolute;
+  right: -104px;
+  top: 37.6%;
+}
+
 .button {
   font-family: Georgia, sans-serif;
   font-size: 1.7rem;
@@ -542,6 +621,16 @@ h1, h2, h3, h4 {
 .button__start-screen {
   width: 207px;
   height: 52px;
+}
+.button__slider {
+  width: 187px;
+  height: 52px;
+  border: 2px solid var(--color-primary);
+  background-color: transparent;
+  padding: 12px 35px;
+}
+.button__slider-last {
+  margin: 60px -2px 60px 0;
 }
 
 /*# sourceMappingURL=style.css.map */
