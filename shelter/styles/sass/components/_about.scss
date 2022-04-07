@@ -1,0 +1,29 @@
+.about {
+    &__content {
+        max-width: 430px;
+    }
+
+    &__text {
+        font-size: 1.5rem;
+        color: var(--font-dark-xl);
+        line-height: 1.6;
+
+        p:last-child {
+            padding-top: 10px;
+        }             
+    }
+
+    &__heading {
+        padding-right: 70px;
+        padding-top: 15px;
+        padding-bottom: 8px;
+        
+    }
+}
+
+.about__container {    
+    display: flex;
+    justify-content: center;    
+    padding: 80px 0 100px 0;
+    column-gap: 120px;
+}
