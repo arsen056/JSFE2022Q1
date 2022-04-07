@@ -1,0 +1,39 @@
+.start-screen {    
+    background-image: url('../assets/images/start-screen-gradient-background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center -111px;
+
+    &__text {
+        font-size: 1.5rem;
+        line-height: 1.6;
+        padding: 25px 10px 27px 0;
+    }
+}
+
+.start-screen__container {
+    display: flex;   
+    background-image: url('../assets/images/start-screen-puppy.png'); 
+    background-position: bottom right;
+    background-repeat: no-repeat;
+}
+
+.start-screen__content {
+    max-width: 480px;
+    padding: 198px 0 243px 0;
+
+    .start-screen__text {
+        color: var(--font-dark-s);
+        font-size: 1.5rem;
+    } 
+}
+
+.start-screen__heading {
+    font-family: Georgia;
+    font-weight: 400;
+    font-size: 4.4rem;
+    line-height: 1.3;
+    color: #FFFFFF;
+    padding: 0 100px 0 0;
+}
+
