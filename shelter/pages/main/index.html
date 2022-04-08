@@ -22,13 +22,13 @@
                         <a class="nav__link nav__link_active" href="#">About the shelter</a>
                     </li>
                     <li class="nav__item">
-                        <a class="nav__link" href="#">Our pets</a>
+                        <a class="nav__link" href="#pets">Our pets</a>
                     </li>
                     <li class="nav__item">
-                        <a class="nav__link" href="#">Help the shelter</a>
+                        <a class="nav__link" href="#help">Help the shelter</a>
                     </li>
                     <li class="nav__item">
-                        <a class="nav__link" href="#">Contacts</a>
+                        <a class="nav__link" href="#contacts">Contacts</a>
                     </li>
                 </ul>
             </nav>
@@ -70,7 +70,7 @@
             </div>
         </section>
 
-        <section class="pets">
+        <section class="pets" id="pets">
             <div class="container pets__container">
                 <h2 class="heading pets__heading">Our friends who<br>
                     are looking for a house</h2>
@@ -109,7 +109,7 @@
             </div>
         </section>
 
-        <section class="help">
+        <section class="help" id="help">
             <div class="container help__container">
                 <h2 class="heading help__heading">How you can help<br>
                     our shelter</h2>
@@ -182,7 +182,7 @@
             </div>
         </section>
 
-        <section class="donation">
+        <section class="donation" id="donation">
             <div class="container donation__container">
                 <img class="donation__dog" src="../../assets/images/donation-dog.png" alt="dog">
                 <div class="donation__info">
@@ -200,35 +200,35 @@
                 </div>
             </div>
         </section>
-        <footer class="footer">
-            <div class="footer__wrapper-bg">
-                <div class="container">
+        <footer class="footer" id="contacts">
+            <div class="footer-dog">
+                <div class="container footer__container">
                     <div class="footer__column footer__contact">
                         <h2 class="footer__heading">For questions and suggestions</h2>
                         <ul class="footer__list">
                             <li class="footer__list__item">
-                                <div class="footer__contact__icon"></div>
-                                <a class="footer__contact__link" href="mailto:email@shelter.com">email@shelter.com</a>
+                                <span class="footer__icon icon-mail"></span>
+                                <a class="footer__item__link" href="mailto:email@shelter.com">email@shelter.com</a>
                             </li>
 
-                            <li class="footer__contact__item">
-                                <div class="footer__contact__icon"></div>
-                                <a class="footer__contact__link" href="mailto:email@shelter.com">email@shelter.com</a>
+                            <li class="footer__list__item footer__list__item-number">
+                                <span class="footer__icon icon-phone"></span>
+                                <a class="footer__item__link" href="tel:+13 674 567 75 54">+13 674 567 75 54</a>
                             </li>
                         </ul>
                     </div>
 
                     <div class="footer__column footer__location">
-                        <h2 class="footer__heading">For questions and suggestions</h2>
-                        <ul class="footer__list">
-                            <li class="footer__list__item">
-                                <div class="footer__item__icon"></div>
+                        <h2 class="footer__heading">We are waiting for your visit</h2>
+                        <ul class="footer__list footer__list-location">
+                            <li class="footer__list__item footer__list__item-location">
+                                <span class="footer__icon icon-location"></span>
                                 <a class="footer__item__link" href="#">1 Central Street, Boston (entrance from the
                                     store)</a>
                             </li>
 
                             <li class="footer__list__item">
-                                <div class="footer__item__icon"></div>
+                                <span class="footer__icon icon-location"></span>
                                 <a class="footer__item__link" href="#">18 South Park, London </a>
                             </li>
                         </ul>

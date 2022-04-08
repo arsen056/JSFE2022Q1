@@ -343,6 +343,7 @@ template {
 
 html {
   font-size: 10px;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -447,8 +448,11 @@ h1, h2, h3, h4 {
   z-index: 1;
   opacity: 0;
 }
-.nav__item .nav__link:hover::after, .nav__item .nav__link_active::after {
+.nav__item .nav__link_active::after {
   opacity: 1;
+}
+.nav__item .nav__link:hover {
+  color: var(--bg-color-1);
 }
 
 .logo {
@@ -466,6 +470,94 @@ h1, h2, h3, h4 {
   font-size: 1.3rem;
   letter-spacing: 0.1em;
   padding-left: 5px;
+}
+
+.footer {
+  background: url(noise_lines_transparent@2X.png), radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%);
+  padding: 56px 0 24px 0;
+}
+
+.footer__img {
+  background-image: url("../assets/images/footer-puppy.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 300px;
+  height: 310px;
+  right: 0;
+  bottom: -24px;
+}
+
+.footer__container {
+  display: flex;
+  column-gap: 139px;
+  position: relative;
+}
+
+.footer__column {
+  max-width: 300px;
+}
+
+.footer__heading {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: 400;
+  font-size: 3.5rem;
+  line-height: 1.3;
+  letter-spacing: 2px;
+  color: var(--bg-color-1);
+  padding-bottom: 27px;
+}
+
+.footer__list {
+  padding: 0;
+}
+.footer__list-location {
+  margin-top: 5px;
+}
+
+.footer__list__item {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  column-gap: 15px;
+  padding-bottom: 20px;
+}
+.footer__list__item-number {
+  padding-top: 18px;
+}
+.footer__list__item-location {
+  padding-bottom: 34px;
+}
+
+.footer__item__link {
+  font-family: Georgia, sans-serif;
+  text-decoration: none;
+  color: var(--color-primary);
+  font-size: 2rem;
+  line-height: 1.15;
+  font-weight: 400;
+  letter-spacing: 1.2px;
+}
+
+.footer__icon {
+  display: inline-flex;
+  background-repeat: no-repeat;
+  width: 45px;
+  height: 32px;
+}
+
+.icon-mail {
+  background-image: url("../assets/icons/mail.svg");
+}
+
+.icon-phone {
+  background-image: url("../assets/icons/icon-phone.svg");
+}
+
+.icon-location {
+  background-image: url("../assets/icons/location.svg");
+  width: 22px;
+  background-size: contain;
+  padding: 0 24px 0 0px;
 }
 
 .start-screen {
@@ -539,6 +631,7 @@ h1, h2, h3, h4 {
 
 .pets {
   background-color: var(--bg-color-2);
+  padding-bottom: 40px;
 }
 .pets__heading {
   max-width: 400px;
@@ -617,7 +710,7 @@ h1, h2, h3, h4 {
 
 .help__container {
   max-width: 1028px;
-  padding: 120px 0 100px 0;
+  padding: 80px 0 85px 0;
 }
 .help__list {
   display: flex;
@@ -697,7 +790,7 @@ h1, h2, h3, h4 {
 
 .donation {
   background-color: var(--bg-color-2);
-  padding: 60px 0;
+  padding: 75px 0 100px 0;
 }
 
 .donation__container {

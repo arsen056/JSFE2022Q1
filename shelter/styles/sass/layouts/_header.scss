@@ -49,8 +49,12 @@
             opacity: 0;
         }
 
-        &:hover::after, &_active::after{
+        &_active::after{
             opacity: 1;
+        }
+
+        &:hover {
+            color: var(--bg-color-1);
         }
     }
 }
