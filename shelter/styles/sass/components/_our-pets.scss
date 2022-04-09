@@ -1,0 +1,24 @@
+.our-pets {
+    background-color: var(--bg-color-2);
+    padding: 84px 0 102px 0;
+}
+
+.our-pets__container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px 40px;
+    padding: 58px 0;
+}
+
+.buttons-pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 20px;
+}
+
+.our-pets {
+    .pets__item {
+        background-color: var(--font-light);
+    }
+}

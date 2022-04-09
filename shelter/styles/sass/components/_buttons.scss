@@ -9,11 +9,81 @@
     border: 0;
     border-radius: 100px;
     cursor: pointer;
-    padding: 15px 45px;   
+    padding: 15px 45px; 
+    transition: background-color 0.3s linear ;  
     
     &__start-screen {
         width: 207px;
         height: 52px;
     }
 
+    &__slider {
+        width: 187px;
+        height: 52px;
+        border: 2px solid var(--color-primary);
+        background-color: transparent;
+        padding: 12px 35px; 
+    }
+
+    &__slider-last {
+        margin: 60px -2px 60px 0;
+    }    
+
+    &__arrow {
+        width: 52px;
+        height: 52px;
+        border: 2px solid var(--color-primary);
+        border-radius: 50%;
+        background-color: transparent;
+        top: 45.1%;
+        background-repeat: no-repeat;
+        background-size: 29%;
+        background-position: center;
+        padding: 0;
+        
+        &-left {
+            position: absolute;            
+            left: -105px;
+            background-image: url("../assets/icons/arrow-left.svg");
+        }
+        &-right {
+            position: absolute;            
+            right: -105px;
+            background-image: url("../assets/icons/arrow-right.svg");
+        }
+        
+    }
+
+    &__pets {
+        background-color: transparent;
+        border: 2px solid var(--color-primary);
+    }
+
+    &__pagination-number {
+        width: 52px;
+        height: 52px;
+        padding: 0;        
+    }
+
+    &__pagination-arrow {
+        width: 52px;
+        height: 52px;
+        padding: 0;     
+        background-color: transparent;  
+        border: 2px solid var(--color-primary);
+    } 
+    
+    &__pagination_inactive {
+        border-color: var(--font-dark-s);
+        color: var(--font-dark-s);
+        
+    }
+
+    &:hover {
+        background-color: var(--color-primary-light);
+    }
+
+    &__pagination_inactive:hover {
+        background-color: transparent;
+    }
 }
