@@ -54,6 +54,11 @@
         
     }
 
+    &__pets {
+        background-color: transparent;
+        border: 2px solid var(--color-primary);
+    }
+
     &:hover {
         background-color: var(--color-primary-light);
     }

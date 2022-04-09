@@ -5,6 +5,25 @@
     background-position: top;
 }
 
+.header-pets {
+    background: none;
+    
+    .logo {
+        &__title, &__subtitle {        
+            color: var(--font-dark-l);           
+        }
+    }
+
+    .nav__item {
+        .nav__link {
+            color: var(--font-dark-l);
+            &:hover {
+                color: var(--font-dark-3xl);
+            }
+        }
+    }
+}
+
 .header__container {
     display: flex;
     align-items: center;
@@ -77,3 +96,6 @@
         padding-left: 5px;
     }
 }
+
+
+
