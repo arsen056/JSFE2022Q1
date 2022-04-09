@@ -9,7 +9,8 @@
     border: 0;
     border-radius: 100px;
     cursor: pointer;
-    padding: 15px 45px;   
+    padding: 15px 45px; 
+    transition: background-color 0.3s linear ;  
     
     &__start-screen {
         width: 207px;
@@ -26,5 +27,34 @@
 
     &__slider-last {
         margin: 60px -2px 60px 0;
+    }    
+
+    &__arrow {
+        width: 52px;
+        height: 52px;
+        border: 2px solid var(--color-primary);
+        border-radius: 50%;
+        background-color: transparent;
+        top: 37.6%;
+        background-repeat: no-repeat;
+        background-size: 29%;
+        background-position: center;
+        padding: 0;
+        
+        &-left {
+            position: absolute;            
+            left: -105px;
+            background-image: url("../assets/icons/arrow-left.svg");
+        }
+        &-right {
+            position: absolute;            
+            right: -105px;
+            background-image: url("../assets/icons/arrow-right.svg");
+        }
+        
+    }
+
+    &:hover {
+        background-color: var(--color-primary-light);
     }
 }

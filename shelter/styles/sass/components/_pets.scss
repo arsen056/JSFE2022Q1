@@ -23,9 +23,9 @@
     padding-top: 58px;
     
     &__wrapper {
+        position: relative;
         display: flex;
-        column-gap: 90px;
-        
+        column-gap: 90px;        
     }
 
     &__item {
@@ -38,6 +38,18 @@
         flex-direction: column;
         align-items: center;
         row-gap: 30px;
+        border-radius: 9px;
+        cursor: pointer;
+
+        &:hover {
+            .button {
+                background-color: var(--color-primary-light);
+            }
+        }
+    }
+
+    &__img {        
+        border-radius: 9px;
     }
 
     &__name {
@@ -47,43 +59,5 @@
         font-weight: 400;
         letter-spacing: 1px;
         color: var(--font-dark-l);
-    }
-
-    &__arrow__wrapper {
-        width: 52px;
-        height: 52px;
-        border: 2px solid var(--color-primary);
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        
-        cursor: pointer; 
-    }
-
-    &__arrow {
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: center ;
-        width: 13px;    
-        height: 10px;          
-
-        &_left {
-            background-image: url("../assets/icons/arrow-left.svg");
-        }
-        &_right {
-            background-image: url("../assets/icons/arrow-right.svg");
-        }
-    }    
-
-    .arrow-left {
-        position: absolute;
-        left: -104px;
-        top: 37.6%;
-    }
-    .arrow-right {
-        position: absolute;
-        right: -104px;
-        top: 37.6%;
     }
 }

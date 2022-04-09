@@ -386,6 +386,7 @@ h1, h2, h3, h4 {
   --bg-color-2: #F6F6F6;
   --bg-color-card: #FAFAFA;
   --color-primary: #F1CDB3;
+  --color-primary-light: #FDDCC4;
   --font-light: #FAFAFA;
   --font-dark-s: #CDCDCD;
   --font-dark-m: #b2b2b2;
@@ -431,7 +432,7 @@ h1, h2, h3, h4 {
   font-size: 1.5rem;
   color: var(--font-dark-s);
   transition: color 0.2s linear;
-  padding: 0 0 5px 0;
+  padding: 0 0 4px 0;
 }
 .nav__item .nav__link_active {
   color: var(--font-light);
@@ -653,6 +654,7 @@ h1, h2, h3, h4 {
   padding-top: 58px;
 }
 .slider__wrapper {
+  position: relative;
   display: flex;
   column-gap: 90px;
 }
@@ -665,6 +667,14 @@ h1, h2, h3, h4 {
   flex-direction: column;
   align-items: center;
   row-gap: 30px;
+  border-radius: 9px;
+  cursor: pointer;
+}
+.slider__item:hover .button {
+  background-color: var(--color-primary-light);
+}
+.slider__img {
+  border-radius: 9px;
 }
 .slider__name {
   font-family: Georgia, sans-serif;
@@ -673,39 +683,6 @@ h1, h2, h3, h4 {
   font-weight: 400;
   letter-spacing: 1px;
   color: var(--font-dark-l);
-}
-.slider__arrow__wrapper {
-  width: 52px;
-  height: 52px;
-  border: 2px solid var(--color-primary);
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-}
-.slider__arrow {
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-  width: 13px;
-  height: 10px;
-}
-.slider__arrow_left {
-  background-image: url("../assets/icons/arrow-left.svg");
-}
-.slider__arrow_right {
-  background-image: url("../assets/icons/arrow-right.svg");
-}
-.slider .arrow-left {
-  position: absolute;
-  left: -104px;
-  top: 37.6%;
-}
-.slider .arrow-right {
-  position: absolute;
-  right: -104px;
-  top: 37.6%;
 }
 
 .help__container {
@@ -868,6 +845,7 @@ h1, h2, h3, h4 {
   border-radius: 100px;
   cursor: pointer;
   padding: 15px 45px;
+  transition: background-color 0.3s linear;
 }
 .button__start-screen {
   width: 207px;
@@ -882,6 +860,31 @@ h1, h2, h3, h4 {
 }
 .button__slider-last {
   margin: 60px -2px 60px 0;
+}
+.button__arrow {
+  width: 52px;
+  height: 52px;
+  border: 2px solid var(--color-primary);
+  border-radius: 50%;
+  background-color: transparent;
+  top: 37.6%;
+  background-repeat: no-repeat;
+  background-size: 29%;
+  background-position: center;
+  padding: 0;
+}
+.button__arrow-left {
+  position: absolute;
+  left: -105px;
+  background-image: url("../assets/icons/arrow-left.svg");
+}
+.button__arrow-right {
+  position: absolute;
+  right: -105px;
+  background-image: url("../assets/icons/arrow-right.svg");
+}
+.button:hover {
+  background-color: var(--color-primary-light);
 }
 
 /*# sourceMappingURL=style.css.map */
