@@ -43,7 +43,13 @@
     background-color: var(--color-primary);
     border-radius: 9px;
     padding: 10px 15px;
-
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s linear;
+    
+    &:hover {
+        background-color: var(--color-primary-light);
+    }
 }
 
 .donation__card__ico {   
