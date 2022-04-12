@@ -21,6 +21,9 @@
     .nav__item {
         .nav__link {
             color: var(--font-dark-l);
+            &_active {
+                color: var(--font-dark-3xl);
+            }
             &:hover {
                 color: var(--font-dark-3xl);
             }
