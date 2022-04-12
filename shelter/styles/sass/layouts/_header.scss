@@ -7,7 +7,9 @@
 }
 
 .header-pets {
-    background: none;
+    position: sticky;
+    top: 0;
+    background-color: var(--bg-color-1);
     padding-top: 5px;
     
     .logo {
