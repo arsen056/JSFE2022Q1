@@ -409,7 +409,9 @@ h1, h2, h3, h4 {
 }
 
 .header-pets {
-  background: none;
+  position: sticky;
+  top: 0;
+  background-color: var(--bg-color-1);
   padding-top: 5px;
 }
 .header-pets .logo__title, .header-pets .logo__subtitle {
