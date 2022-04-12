@@ -405,10 +405,12 @@ h1, h2, h3, h4 {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
+  padding-top: 35px;
 }
 
 .header-pets {
   background: none;
+  padding-top: 5px;
 }
 .header-pets .logo__title, .header-pets .logo__subtitle {
   color: var(--font-dark-l);
