@@ -56,7 +56,7 @@
 
     &__pets {
         background-color: transparent;
-        border: 2px solid var(--color-primary);
+        border: 2px solid var(--color-primary-light);
     }
 
     &__pagination-number {
@@ -75,15 +75,10 @@
     
     &__pagination_inactive {
         border-color: var(--font-dark-s);
-        color: var(--font-dark-s);
-        
+        color: var(--font-dark-s);        
     }
 
     &:hover {
         background-color: var(--color-primary-light);
-    }
-
-    &__pagination_inactive:hover {
-        background-color: transparent;
-    }
+    }  
 }
