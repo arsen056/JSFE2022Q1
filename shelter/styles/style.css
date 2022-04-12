@@ -684,7 +684,7 @@ h1, h2, h3, h4 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  row-gap: 30px;
+  row-gap: 31.2px;
   border-radius: 9px;
   cursor: pointer;
 }
@@ -932,7 +932,7 @@ h1, h2, h3, h4 {
 }
 .button__pets {
   background-color: transparent;
-  border: 2px solid var(--color-primary);
+  border: 2px solid var(--color-primary-light);
 }
 .button__pagination-number {
   width: 52px;
@@ -952,9 +952,6 @@ h1, h2, h3, h4 {
 }
 .button:hover {
   background-color: var(--color-primary-light);
-}
-.button__pagination_inactive:hover {
-  background-color: transparent;
 }
 
 /*# sourceMappingURL=style.css.map */
