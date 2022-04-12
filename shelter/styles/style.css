@@ -420,6 +420,9 @@ h1, h2, h3, h4 {
 .header-pets .nav__item .nav__link {
   color: var(--font-dark-l);
 }
+.header-pets .nav__item .nav__link_active {
+  color: var(--font-dark-3xl);
+}
 .header-pets .nav__item .nav__link:hover {
   color: var(--font-dark-3xl);
 }
