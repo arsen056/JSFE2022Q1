@@ -695,6 +695,10 @@ h1, h2, h3, h4 {
   border-radius: 9px;
   cursor: pointer;
 }
+.pets__item:hover {
+  background-color: var(--bg-color-1);
+  box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
+}
 .pets__item:hover .button {
   background-color: var(--color-primary-light);
 }
@@ -727,10 +731,6 @@ h1, h2, h3, h4 {
   justify-content: center;
   align-items: center;
   column-gap: 20px;
-}
-
-.our-pets .pets__item {
-  background-color: var(--font-light);
 }
 
 .help__container {
@@ -854,6 +854,7 @@ h1, h2, h3, h4 {
   max-width: 349px;
   font-size: 2rem;
   color: var(--font-dark-l);
+  text-decoration: none;
   background-color: var(--color-primary);
   border-radius: 9px;
   padding: 10px 15px;
@@ -959,12 +960,15 @@ h1, h2, h3, h4 {
 }
 .button:hover {
   background-color: var(--color-primary-light);
+  border-color: var(--color-primary-light);
 }
 .button__pagination_inactive:hover {
   background-color: transparent;
+  cursor: auto;
 }
 .button__pagination-number_active:hover {
   background-color: var(--color-primary);
+  cursor: auto;
 }
 
 /*# sourceMappingURL=style.css.map */
