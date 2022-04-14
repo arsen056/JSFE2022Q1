@@ -16,3 +16,16 @@
     align-items: center;
     column-gap: 20px;
 }
+
+@media screen and (max-width: 991px) {
+    .our-pets {
+        padding: 84px 0 76px 0;
+    }
+    .our-pets__container {
+        justify-content: center;
+        padding: 28px 0 40px 0;
+        .pets__item:nth-child(7) {
+            display: none;
+        }
+    }    
+}

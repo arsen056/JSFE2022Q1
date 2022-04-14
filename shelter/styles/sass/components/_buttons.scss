@@ -10,7 +10,7 @@
     border-radius: 100px;
     cursor: pointer;
     padding: 15px 45px; 
-    transition: background-color 0.3s linear ;  
+    transition: background-color 0.3s linear;  
     
     &__start-screen {
         width: 207px;
@@ -50,8 +50,7 @@
             position: absolute;            
             right: -105px;
             background-image: url("../assets/icons/arrow-right.svg");
-        }
-        
+        }        
     }
 
     &__pets {
@@ -86,11 +85,41 @@
     &__pagination_inactive:hover {
         background-color: transparent;
         border-color: var(--font-dark-s);
-        cursor: auto;
+        cursor: default;
     } 
 
     &__pagination-number_active:hover {
         background-color: var(--color-primary);
-        cursor: auto;
+        cursor: default;
     }
 }
+
+@media screen and (max-width: 1279px) {
+    .button__arrow-left {        
+        left: -25px;
+    }    
+    .button__arrow-right {        
+        right: -25px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .button__start-screen {
+        margin-left: 126px;
+    }
+
+    .button__arrow {
+        top: 45.3%;
+    }
+
+    .button__arrow-left {
+        left: 30px;
+    }
+
+    .button__arrow-right {
+        right: 30px;
+    }
+
+
+}
+

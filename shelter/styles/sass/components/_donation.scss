@@ -74,3 +74,11 @@
     margin: 0;
     padding-top: 20px;
 }
+
+
+@media screen and (max-width: 991px) {
+    .donation__container {
+        row-gap: 61px;
+        flex-direction: column-reverse;
+    }
+}

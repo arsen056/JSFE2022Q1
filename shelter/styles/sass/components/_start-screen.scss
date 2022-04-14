@@ -36,3 +36,33 @@
     color: #FFFFFF;
     padding: 0 100px 0 0;
 }
+
+@media screen and (max-width: 1279px) {
+    .start-screen__content {        
+        padding: 198px 0 65px 0;
+    }
+
+    .start-screen__container {
+        background-size: 46%;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .start-screen {
+        background-size: 300%;
+        background-position: 40% 98%;
+    }
+    .start-screen__container {
+        display: flex;
+        justify-content: center;
+        background-size: 74%;        
+        margin-left: -31px;
+        
+    }
+
+    .start-screen__content {
+        max-width: 541px;
+        padding: 33px 0 695px 71px;
+    }
+}
+

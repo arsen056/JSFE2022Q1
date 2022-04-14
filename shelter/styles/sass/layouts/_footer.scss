@@ -94,3 +94,26 @@
     background-size: contain;
     padding: 0 24px 0 0px;
 }
+
+@media screen and (max-width: 1279px) {
+    .footer__container {
+        column-gap: 30px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .footer {
+        padding: 30px 0 0 0px;
+    }
+
+    .footer__container {
+        flex-wrap: wrap;
+        column-gap: 39px;
+        row-gap: 29px;
+        justify-content: center;
+    }
+
+    .footer__img {
+        position: static;
+    }
+}

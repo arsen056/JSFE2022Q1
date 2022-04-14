@@ -65,3 +65,17 @@
     }
 }
 
+@media screen and (max-width: 1279px) {
+    .pets__wrapper {
+        column-gap: 10px;        
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .pets__wrapper {
+        column-gap: 40px;
+    }
+    .pets__item:last-child {
+        display: none;
+    }
+}
