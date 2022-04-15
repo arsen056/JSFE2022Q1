@@ -74,3 +74,56 @@
     margin: 0;
     padding-top: 20px;
 }
+
+
+@media screen and (max-width: 991px) {
+    .donation__container {
+        row-gap: 61px;
+        flex-direction: column-reverse;
+    }
+}
+
+@media screen and (max-width: 599px) {
+    .donation {
+        padding: 39px 0 42px 0;
+
+        &__container {
+            row-gap: 42px
+        }
+
+        &__info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        }
+    }
+    .donation__heading {
+        text-align: center;
+        letter-spacing: 1.5px;
+        padding: 0 40px 23px 40px;
+    }
+
+    .donation__subheading {
+        letter-spacing: 0;
+        text-align: center;
+        padding-bottom: 24px;
+    }
+
+    .donation__card {
+        width: 281px;
+        font-size: 1.5rem;
+        padding: 10px 0 10px 15px;
+        &__number {
+            letter-spacing: 0.9px;
+        }
+    }
+
+    .donation__text {
+        text-align: justify;
+        padding: 20px 10px 0 10px;
+    }
+
+    .donation__dog {
+        width: 260px;
+    }
+}

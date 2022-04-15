@@ -36,3 +36,35 @@
     padding: 80px 0 100px 0;
     column-gap: 120px;
 }
+
+@media screen and (max-width: 991px) {
+    .about__container {
+        padding: 66px 0 100px 0;
+        flex-direction: column-reverse;
+        align-items: center;
+        row-gap: 65px;
+    }
+}
+
+@media screen and (max-width: 599px) {
+
+    .about__container {
+        padding: 42px 0 44px 0;
+        row-gap: 15px;
+        img {
+            max-width: 260px;
+        }
+    }
+    .about__heading {
+        text-align: center;
+        font-size: 25px;
+        padding: 0 15px;
+        letter-spacing: 1.4px;
+    }
+
+    .about__text {
+        text-align: justify;
+        padding: 8px 25px;
+    }
+}
+

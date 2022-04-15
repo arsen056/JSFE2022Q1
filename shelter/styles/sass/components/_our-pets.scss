@@ -16,3 +16,38 @@
     align-items: center;
     column-gap: 20px;
 }
+
+@media screen and (max-width: 991px) {
+    .our-pets {
+        padding: 84px 0 76px 0;
+            
+        .pets__item:nth-child(8), .pets__item:nth-child(7) {
+            display: none;
+        }
+    }
+    .our-pets__container {
+        justify-content: center;
+        padding: 28px 0 40px 0;
+        
+    }    
+}
+
+@media screen and (max-width: 599px) {
+    .our-pets {
+        padding: 47px 0 44px 0; 
+
+        &__container {
+            padding: 41px 0 40px 0;
+        }
+        
+        .pets__item:nth-child(4), .pets__item:nth-child(5), .pets__item:nth-child(6)  {
+            display: none;
+        }
+    }
+
+    
+
+    .buttons-pagination {
+        column-gap: 10px;
+    }
+}

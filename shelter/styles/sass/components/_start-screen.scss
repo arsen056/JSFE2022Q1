@@ -36,3 +36,68 @@
     color: #FFFFFF;
     padding: 0 100px 0 0;
 }
+
+@media screen and (max-width: 1279px) {
+    .start-screen__content {        
+        padding: 198px 0 65px 0;
+    }
+
+    .start-screen__container {
+        background-size: 46%;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .start-screen {
+        background-size: 300%;
+        background-position: 40% 98%;
+    }
+    .start-screen__container {
+        display: flex;
+        justify-content: center;
+        background-size: 74%;        
+        margin-left: -31px;
+        
+    }
+
+    .start-screen__content {
+        max-width: 541px;
+        padding: 33px 0 695px 71px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .start-screen__content {
+        padding: 33px 0 520px 71px;
+    }
+}
+
+@media screen and (max-width: 599px) {
+    .start-screen {
+        background: linear-gradient(90deg, rgba(89,71,57,1) 0%, rgba(57,49,44,1) 50%, rgba(34,32,33,1) 100%);
+        background-size: cover;
+        &__container {
+            margin-left: 0;
+            background-size: 83%;
+        }
+
+        &__content {
+            max-width: 300px;
+            padding: 33px 0 376px 0;
+        }
+
+        &__text {
+            padding: 27px 1px 27px 0;
+            text-align: center;
+        }
+        
+    }
+
+    .start-screen__heading {
+        text-align: center;
+        font-size: 2.5rem;
+        letter-spacing: 1.5px;
+        padding: 0 45px;
+    }
+}
+
