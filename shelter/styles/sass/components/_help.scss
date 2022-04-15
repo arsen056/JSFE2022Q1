@@ -103,3 +103,38 @@
     }
     
 }
+
+@media screen and (max-width: 767px) {
+    .help__list {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 599px) {
+    .help__container {
+        padding: 43px 0 28px 0;
+        
+    }
+    .help__list {
+        padding-left: 16px;
+        padding-top: 26px;
+        column-gap: 31px;
+        row-gap: 30px;
+        justify-content: start;
+    }
+
+    .help__item {
+        width: 130px;
+        height: 87px;
+        row-gap: 20px;
+        &__heading {
+            font-size: 1.5rem;
+        }
+    }
+    .ico {
+        width: 50px;
+        height: 50px;
+        background-size: cover;
+    }
+}
+

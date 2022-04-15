@@ -43,12 +43,12 @@
         
         &-left {
             position: absolute;            
-            left: -105px;
+            left: -65px;
             background-image: url("../assets/icons/arrow-left.svg");
         }
         &-right {
             position: absolute;            
-            right: -105px;
+            right: -65px;
             background-image: url("../assets/icons/arrow-right.svg");
         }        
     }
@@ -119,7 +119,42 @@
     .button__arrow-right {
         right: 30px;
     }
+}
 
+@media screen and (max-width: 767px) {
+    .button__arrow {
+        top: 80%;
+    }
+
+    .button__arrow-left {
+        left: 30%;
+    }
+
+    .button__arrow-right {
+        right: 30%;
+    }
+
+    .button__slider-last {
+        margin: 91px -2px 23px 0;
+    }
+}
+
+@media screen and (max-width: 599px) {
+    .button__start-screen {
+        margin-left: 46px;
+    }
+
+    .button__arrow {
+        top: 76.8%;
+    }
+
+    .button__arrow-left {
+        left: 21.3%;
+    }
+
+    .button__arrow-right {
+        right: 21.3%;
+    }
 
 }
 
