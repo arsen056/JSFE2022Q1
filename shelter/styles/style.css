@@ -826,7 +826,7 @@ h1, h2, h3, h4 {
 @media screen and (max-width: 599px) {
   .start-screen__container {
     margin: 0 auto;
-    background-size: 83%;
+    background-size: 82%;
     background-position: right 10px bottom;
   }
   .start-screen__content {
