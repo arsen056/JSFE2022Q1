@@ -14,7 +14,7 @@
 .start-screen__container {
     display: flex;   
     background-image: url('../assets/images/start-screen-puppy.png'); 
-    background-position: bottom right;
+    background-position: right 40px bottom;
     background-repeat: no-repeat;
 }
 
@@ -57,7 +57,7 @@
         justify-content: center;
         background-size: 74%;        
         margin-left: -31px;
-        
+        background-position: right 0px bottom;        
     }
 
     .start-screen__content {
@@ -67,18 +67,30 @@
 }
 
 @media screen and (max-width: 767px) {
+    .start-screen {
+        background: linear-gradient(90deg, rgba(89,71,57,1) 0%, rgba(57,49,44,1) 50%, rgba(34,32,33,1) 100%);
+        background-size: cover;
+
+        &__container {
+            margin: 0 auto;
+        }
+    }
     .start-screen__content {
-        padding: 33px 0 520px 71px;
+        padding: 33px 0 520px 0px;
+        text-align: center;
+    }
+
+    .start-screen__heading {
+        padding: 0;
     }
 }
 
 @media screen and (max-width: 599px) {
-    .start-screen {
-        background: linear-gradient(90deg, rgba(89,71,57,1) 0%, rgba(57,49,44,1) 50%, rgba(34,32,33,1) 100%);
-        background-size: cover;
+    .start-screen {        
         &__container {
-            margin-left: 0;
+            margin: 0 auto;
             background-size: 83%;
+            background-position: right 10px bottom;
         }
 
         &__content {
@@ -89,8 +101,7 @@
         &__text {
             padding: 27px 1px 27px 0;
             text-align: center;
-        }
-        
+        }        
     }
 
     .start-screen__heading {

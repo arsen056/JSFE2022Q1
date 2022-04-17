@@ -1,6 +1,9 @@
 .our-pets {
     background-color: var(--bg-color-2);
     padding: 84px 0 102px 0;
+    .pets__item {
+        row-gap: 29.2px;
+    }
 }
 
 .our-pets__container {
@@ -43,9 +46,7 @@
         .pets__item:nth-child(4), .pets__item:nth-child(5), .pets__item:nth-child(6)  {
             display: none;
         }
-    }
-
-    
+    }   
 
     .buttons-pagination {
         column-gap: 10px;

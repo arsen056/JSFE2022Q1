@@ -11,6 +11,7 @@
     top: 0;
     background-color: var(--bg-color-1);
     padding-top: 5px;
+    z-index: 5;
     
     .logo {
         &__title, &__subtitle {        
@@ -144,17 +145,13 @@
     }
 }
 
-@media screen and (max-width: 767px) {
-    .nav {
-        column-gap: 20px;
-    }
-}
 
-@media screen and (max-width: 599px) {
+@media screen and (max-width: 767px) {
     .header {
         background: linear-gradient(90deg, rgba(89,71,57,1) 0%, rgba(57,49,44,1) 50%, rgba(34,32,33,1) 100%);
     }
     .header__container {
+        width: 100%;
         padding: 25px 10px;
     }
     .nav {

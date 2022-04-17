@@ -122,6 +122,10 @@
 }
 
 @media screen and (max-width: 767px) {
+    .button__start-screen {
+        margin-left: 0;
+    }
+
     .button__arrow {
         top: 80%;
     }
@@ -140,9 +144,7 @@
 }
 
 @media screen and (max-width: 599px) {
-    .button__start-screen {
-        margin-left: 46px;
-    }
+
 
     .button__arrow {
         top: 76.8%;
