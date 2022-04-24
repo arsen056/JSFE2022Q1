@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../styles/style.css">
+    <link type="image/x-icon" href="../../assets/icons/favicon.ico" rel="shortcut icon">
     <title>Shelter - Our pets</title>
 </head>
 
@@ -45,53 +46,15 @@
                 <h2 class="heading our-pets__heading">Our friends who<br>
                     are looking for a house</h2>
                 <div class="our-pets__container">
-                    <div class="pets__item">
-                        <img class="pets__img" src="../../assets/images/pets-katrine.png" alt="Katrine">
-                        <h3 class="pets__name">Katrine</h3>
-                        <div class="button button__pets">Learn more</div>
-                    </div>
-                    <div class="pets__item">
-                        <img class="pets__img" src="../../assets/images/pets-jennifer.png" alt="Jennifer">
-                        <h3 class="pets__name">Jennifer</h3>
-                        <div class="button button__pets">Learn more</div>
-                    </div>
-                    <div class="pets__item">
-                        <img class="pets__img" src="../../assets/images/pets-woody.png" alt="Woody">
-                        <h3 class="pets__name">Woody</h3>
-                        <div class="button button__pets">Learn more</div>
-                    </div>
-                    <div class="pets__item">
-                        <img class="pets__img" src="../../assets/images/pets-sophia.png" alt="Sophia">
-                        <h3 class="pets__name">Sophia</h3>
-                        <div class="button button__pets">Learn more</div>
-                    </div>
-                    <div class="pets__item">
-                        <img class="pets__img" src="../../assets/images/pets-timmy.png" alt="timmy">
-                        <h3 class="pets__name">Timmy</h3>
-                        <div class="button button__pets">Learn more</div>
-                    </div>
-                    <div class="pets__item">
-                        <img class="pets__img" src="../../assets/images/pets-charly.jpg" alt="Charly">
-                        <h3 class="pets__name">Charly</h3>
-                        <div class="button button__pets">Learn more</div>
-                    </div>
-                    <div class="pets__item">
-                        <img class="pets__img" src="../../assets/images/pets-scarlet.png" alt="Scarlet">
-                        <h3 class="pets__name">Scarlet</h3>
-                        <div class="button button__pets">Learn more</div>
-                    </div>
-                    <div class="pets__item">
-                        <img class="pets__img" src="../../assets/images/pets-freddie.png" alt="Freddie">
-                        <h3 class="pets__name">Freddie</h3>
-                        <div class="button button__pets">Learn more</div>
-                    </div>
+
                 </div>
                 <div class="buttons-pagination">
-                    <button class="button button__pagination-arrow button__pagination_inactive">&#60;&#60;</button>
-                    <button class="button button__pagination-arrow button__pagination_inactive">&#60;</button>
+                    <button
+                        class="button button__pagination-arrow button__pagination_inactive first-page">&#60;&#60;</button>
+                    <button class="button button__pagination-arrow button__pagination_inactive prev-page">&#60;</button>
                     <button class="button button__pagination-number button__pagination-number_active">1</button>
-                    <button class="button button__pagination-arrow">></button>
-                    <button class="button button__pagination-arrow">>></button>
+                    <button class="button button__pagination-arrow next-page">></button>
+                    <button class="button button__pagination-arrow last-page">>></button>
                 </div>
             </div>
         </section>
@@ -136,7 +99,23 @@
             </div>
         </div>
     </footer>
-    <!-- <script src="../../js/index.js"></script> -->
+    <div class="modal">
+        <div class="modal__content">
+            <img class="modal__img" src="../../assets/images/jennifer.png" alt="Jeniffer">
+            <div class="modal-text">
+                <h2 class="modal__title">Jennifer</h2>
+                <h3 class="modal__subtitle">Dog - Labrador</h3>
+                <p class="modal__description">Jennifer is a sweet 2 months old Labrador that is patiently waiting to
+                    find a new forever home. This girl really enjoys being able to go outside to run and play, but won't
+                    hesitate to play up a storm in the house if she has all of her favorite toys.</p>
+                <ul class="modal__other-information">
+                </ul>
+            </div>
+            <button class="close-modal"></button>
+        </div>
+    </div>
+    <script src="./index.js"></script>
+    <script type="text/javascript" src="../../js/pets.json"></script>
 </body>
 
 

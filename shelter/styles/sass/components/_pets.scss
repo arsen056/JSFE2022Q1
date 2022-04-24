@@ -16,15 +16,14 @@
 }
 
 .slider {
-    max-width: 1080px;
+    width: 990px;
+    overflow: hidden; 
+    padding-top: 59px;
 }
 
-.slider__items {
-    position: relative;
+.slide-item {
     display: flex;
-    column-gap: 90px;    
-    padding-top: 58px;
-    transition: transform 0.7s linear;
+    column-gap: 90px;
 }
 
 .pets {
@@ -33,7 +32,9 @@
     align-items: center;
 
     &__wrapper {
-        overflow: hidden;  
+        position: relative;
+        display: flex;
+        left: -990px;
     }
 
     &__item {
@@ -74,25 +75,79 @@
     }
 }
 
+@keyframes move-right {
+    from {left: -990px}
+    to {left: 0px}
+}
+
+.transition-right {
+    animation-name: move-right;
+    animation-duration: 0.4s;
+}
+
+@keyframes move-left {
+    from {left: -990px;}
+    to {left: -1980px;}
+}
+  
+.transition-left {
+    animation-name: move-left;
+    animation-duration: 0.4s;
+}
+
 @media screen and (max-width: 1279px) {
+    .slider {
+        max-width: 850px;
+    }
+
+    .pets__wrapper {
+        left: -850px;
+    }
+    
+    .slide-item {
+        column-gap: 20px;
+    }
+
     .slider__items {
         column-gap: 10px;        
     }
 }
 
 @media screen and (max-width: 991px) {
-    .pets__wrapper {
-        column-gap: 40px;
-    }
     .pets {
         .pets__item:nth-child(3) {
             display: none;
+        }
+
+        &__wrapper {
+            left: -630px;
+            column-gap: 51px
         }
     }
 
     .slider__items {
         column-gap: 39px;
     }
+
+    .slider {
+        width: 580px;
+    }
+
+    .slide-item {
+        column-gap: 40px;
+    }
+
+
+    @keyframes move-right {
+        from {left: -630px}
+        to {left: 0px}
+    }
+
+    @keyframes move-left {
+        from {left: -630px;}
+        to {left: -1260px;}
+    }
+
 }
 
 @media screen and (max-width: 599px) {
@@ -101,8 +156,10 @@
         padding-bottom: 19px;
 
         &__wrapper {
+            left: -270px;
             padding-top: 41px;
             padding-bottom: 23px;
+            column-gap: 0;
         }
 
         .pets__item {
@@ -113,7 +170,20 @@
         }
     }
 
+    .slider {
+        width: 270px;
+    }
     .slider__items {
         padding-top: 0;
+    }
+
+    @keyframes move-right {
+        from {left: -270px}
+        to {left: 0px}
+    }
+
+    @keyframes move-left {
+        from {left: -270px;}
+        to {left: -540px;}
     }
 }
