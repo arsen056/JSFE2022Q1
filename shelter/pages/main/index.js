@@ -38,7 +38,7 @@ nav.addEventListener('click', closeBurger);
 
 
 // Slider
-const url = '../../js/pets.json';
+const url = '../../assets/pets.json';
 const SLIDER = document.querySelector('.pets__wrapper');
 const ITEM_LEFT = document.querySelector("#left-slides");
 const ITEM_RIGHT = document.querySelector("#right-slides");
