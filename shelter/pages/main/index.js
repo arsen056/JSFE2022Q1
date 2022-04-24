@@ -3,6 +3,7 @@ const burger = document.querySelector('.burger');
 const nav = document.querySelector('.header__nav');
 const logo = document.querySelector('.logo');
 const bgBurger = document.querySelector('.background-burger');
+const bodyShadow = document.querySelector('#body-shadow');
 
 function toggleBurger() {
     if (window.matchMedia("(max-width: 767px)").matches) {
@@ -10,7 +11,8 @@ function toggleBurger() {
         document.body.classList.toggle('background-burger');
         burger.classList.toggle('burger-active');    
         nav.classList.toggle('nav-active');
-        logo.classList.toggle('logo-active');        
+        logo.classList.toggle('logo-active');
+        bodyShadow.classList.toggle('body-shadow')        
     }
 }
 
@@ -71,7 +73,6 @@ getData(url, ITEM_LEFT);
 getData(url, ITEM_ACTIVE);
 getData(url, ITEM_RIGHT);
 
-
 function randomPets(slides) {    
     const numbers = [];
     let rand = 0;
@@ -128,13 +129,13 @@ SLIDER.addEventListener('animationend', (animationEvent) => {
     if (animationEvent.animationName === "move-right") {
         SLIDER.classList.remove("transition-right");       
         document.querySelector('#active-slides').innerHTML = ITEM_LEFT.innerHTML; 
-        getData(url, ITEM_LEFT);        
-   
+        getData(url, ITEM_LEFT);
+        setTimeout(() => {ITEM_RIGHT.innerHTML = ITEM_LEFT.innerHTML }, 300)
     } else {
-        SLIDER.classList.remove("transition-left"); 
-        document.querySelector('#active-slides').innerHTML = ITEM_RIGHT.innerHTML;    
-        getData(url, ITEM_LEFT);     
-        getData(url, ITEM_RIGHT); 
+        SLIDER.classList.remove("transition-left");        
+        document.querySelector('#active-slides').innerHTML = ITEM_RIGHT.innerHTML;        
+        getData(url, ITEM_RIGHT);         
+        setTimeout(() => {ITEM_LEFT.innerHTML = ITEM_RIGHT.innerHTML }, 300)        
     }
 })
 

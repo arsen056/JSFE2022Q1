@@ -9,6 +9,10 @@
     height: 100%;    
     transition: all 0.5s linear;
     background-color: rgba(153,153,153, 0.4);
+
+    &:hover {        
+        cursor: pointer;        
+    }    
 }
 
 .modal-open {
@@ -33,6 +37,17 @@
     img {
         width: 500px;
         border-radius: 9px;
+    }
+
+    &:hover {        
+        cursor: auto;        
+    }
+
+    &:not(:hover) {
+        cursor: pointer;
+        .close-modal {
+            background-color: var(--color-primary);
+        }
     }
 }
 
@@ -125,33 +140,25 @@
 @media screen and (max-width: 767px) {
     .modal__content {
         max-width: 580px;
-    }
-
-
-    .modal__subtitle {
-        margin-bottom: 15px;
-    }
-
-    .close-modal {
-        right: 0px;
-        top: -57px;
-    }
-}
-
-@media screen and (max-width: 599px) {
-    .modal__content {
+        padding: 20px 20px;
         margin: 0 40px;
         width: auto;
-        padding: 20px 20px;
-        
-       img {
-           display: none;
-       }
+
+        img {
+            display: none;
+        }
     }
 
     .modal-text {
         margin: 0 auto;
     }
+
+    .modal__subtitle {
+        margin-bottom: 15px;
+    }
+}
+
+@media screen and (max-width: 599px) {    
 
     .modal__title {
         text-align: center;

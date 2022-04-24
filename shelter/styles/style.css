@@ -467,6 +467,10 @@ h1, h2, h3, h4 {
   color: var(--font-dark-3xl);
 }
 
+.header-bg {
+  background-color: transparent;
+}
+
 .header__container {
   display: flex;
   align-items: center;
@@ -539,7 +543,7 @@ h1, h2, h3, h4 {
   width: 30px;
   height: 30px;
   position: relative;
-  z-index: 6;
+  z-index: 10;
   overflow: hidden;
 }
 .burger span {
@@ -559,11 +563,14 @@ h1, h2, h3, h4 {
   top: calc(50% + 10px);
 }
 
-.background-burger {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  z-index: 5;
+.body-shadow {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(20, 20, 20, 0.4);
+  z-index: 2;
 }
 
 @media screen and (max-width: 991px) {
@@ -627,6 +634,7 @@ h1, h2, h3, h4 {
 
   .nav-active {
     right: 0;
+    overflow: auto;
   }
 
   .header-pets .burger span {
@@ -1617,6 +1625,9 @@ h1, h2, h3, h4 {
   transition: all 0.5s linear;
   background-color: rgba(153, 153, 153, 0.4);
 }
+.modal:hover {
+  cursor: pointer;
+}
 
 .modal-open {
   visibility: visible;
@@ -1640,6 +1651,15 @@ h1, h2, h3, h4 {
 .modal__content img {
   width: 500px;
   border-radius: 9px;
+}
+.modal__content:hover {
+  cursor: auto;
+}
+.modal__content:not(:hover) {
+  cursor: pointer;
+}
+.modal__content:not(:hover) .close-modal {
+  background-color: var(--color-primary);
 }
 
 .modal-text {
@@ -1726,22 +1746,9 @@ h1, h2, h3, h4 {
 @media screen and (max-width: 767px) {
   .modal__content {
     max-width: 580px;
-  }
-
-  .modal__subtitle {
-    margin-bottom: 15px;
-  }
-
-  .close-modal {
-    right: 0px;
-    top: -57px;
-  }
-}
-@media screen and (max-width: 599px) {
-  .modal__content {
+    padding: 20px 20px;
     margin: 0 40px;
     width: auto;
-    padding: 20px 20px;
   }
   .modal__content img {
     display: none;
@@ -1751,6 +1758,11 @@ h1, h2, h3, h4 {
     margin: 0 auto;
   }
 
+  .modal__subtitle {
+    margin-bottom: 15px;
+  }
+}
+@media screen and (max-width: 599px) {
   .modal__title {
     text-align: center;
   }
