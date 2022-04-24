@@ -1,4 +1,4 @@
-const url = '../../js/pets.json';
+const url = '../../assets/pets.json';
 
 // Burger
 const burger = document.querySelector('.burger');
@@ -59,7 +59,7 @@ adaptiveCountCards();
 const petsNumber = addPetsNumber(pageCount);
 
 async function showPetsCard(start, end) {
-    const url = '../../js/pets.json';
+    const url = '../../assets/pets.json';
     const res = await fetch(url);
     const data = await res.json();  
 
