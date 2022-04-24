@@ -5,6 +5,7 @@ const burger = document.querySelector('.burger');
 const nav = document.querySelector('.header__nav');
 const logo = document.querySelector('.logo');
 const bgBurger = document.querySelector('.background-burger');
+const bodyShadow = document.querySelector('#body-shadow'); 
 
 function toggleBurger() {
     if (window.matchMedia("(max-width: 767px)").matches) {
@@ -12,7 +13,9 @@ function toggleBurger() {
         document.body.classList.toggle('background-burger');
         burger.classList.toggle('burger-active');    
         nav.classList.toggle('nav-active');
-        logo.classList.toggle('logo-active');        
+        logo.classList.toggle('logo-active');
+        bodyShadow.classList.toggle('body-shadow');
+        document.querySelector('.header-pets').classList.toggle('header-bg');     
     }
 }
 
@@ -52,14 +55,16 @@ let end = 8;
 let step = 8;
 let pageCount = 6;
 let pageNum = +pageNumber.innerHTML;
+adaptiveCountCards();
 const petsNumber = addPetsNumber(pageCount);
 
 async function showPetsCard(start, end) {
     const url = '../../js/pets.json';
     const res = await fetch(url);
-    const data = await res.json();    
+    const data = await res.json();  
 
     let cards = petsNumber.slice(start, end)
+
     petsContainer.innerHTML = ``;
     pageNumber.innerHTML = pageNum;
 
@@ -73,8 +78,6 @@ async function showPetsCard(start, end) {
     }
 }
 
-
-adaptiveCountCards();
 showPetsCard(start, end);
 
 NEXT_PAGE.addEventListener('click', forwardPage);
@@ -117,12 +120,13 @@ function backPage() {
         NEXT_PAGE.addEventListener('click', forwardPage); 
         NEXT_PAGE.classList.remove('button__pagination_inactive');
         LAST_PAGE.classList.remove('button__pagination_inactive');  
+        LAST_PAGE.addEventListener('click', moveLastPage);
     }
 }
 
 function moveLastPage() {
-    start = petsNumber.length - notesOnPage - 1;
-    end = petsNumber.length - 1;
+    start = petsNumber.length - notesOnPage;    
+    end = petsNumber.length ;
     pageNum = pageCount;
     showPetsCard(start, end);
     PREV_PAGE.classList.remove('button__pagination_inactive');
@@ -175,6 +179,7 @@ function adaptiveCountCards() {
         pageCount = 8;
         notesOnPage = 6;
     } 
+
     if (window.matchMedia("(max-width: 767px)").matches) {
         step = 3;
         end = 3;
