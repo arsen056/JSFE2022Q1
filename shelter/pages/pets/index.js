@@ -199,10 +199,13 @@ const PET_NAME = document.querySelector('.pets__name');
 
 PETS_CONTAINER.addEventListener('click', (event) => {
     let target = event.target.closest('.pets__item');
-    MODAL.classList.add('modal-open');
-    document.body.classList.add('lock');
-    MODAL_WINDOW.classList.add('modal-transition');
-    getDataModal(url, target.dataset.item);
+
+    if (target.classList.contains('pets__item')) {
+        MODAL.classList.add('modal-open');
+        document.body.classList.add('lock');
+        MODAL_WINDOW.classList.add('modal-transition');
+        getDataModal(url, target.dataset.item);
+    }
 })
 
 CLOSE_MODAL.addEventListener('click', closeModal)
