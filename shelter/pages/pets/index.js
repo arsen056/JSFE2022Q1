@@ -171,7 +171,7 @@ function addPetsNumber(pages) {
 }
 
 function adaptiveCountCards() {
-    if (window.matchMedia("(max-width: 991px)").matches) {
+    if (window.matchMedia("(max-width: 1279px)").matches) {
         start = 0;
         step = 6;
         end = 6;
